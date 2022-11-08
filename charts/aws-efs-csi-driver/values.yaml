@@ -79,6 +79,8 @@ controller:
     #  eks.amazonaws.com/role-arn: arn:aws:iam::111122223333:role/efs-csi-role
   healthPort: 9909
   regionalStsEndpoints: false
+  # Extra environment variables added to the controller pods
+  extraEnv: []
 ## Node daemonset variables
 
 node:
@@ -122,6 +124,8 @@ node:
     ## Enable if EKS IAM for SA is used
     #  eks.amazonaws.com/role-arn: arn:aws:iam::111122223333:role/efs-csi-role
   healthPort: 9809
+  # Extra environment variables added to the node pods
+  extraEnv: []
 
 storageClasses: []
 # Add StorageClass resources like:

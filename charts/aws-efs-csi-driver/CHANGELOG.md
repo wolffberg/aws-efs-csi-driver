@@ -1,4 +1,7 @@
 # Helm chart
+# v2.4.0
+* Add `extraEnv` value to controller and node pods
+
 # v2.3.0
 * Bump app/driver version to `v1.4.3`
 
